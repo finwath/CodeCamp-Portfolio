@@ -1,0 +1,210 @@
+<!-- freeCodecamp Cert Project #1: Survey Form   -->
+<!-- Responsive Web Design Certification Project -->
+<!-- By: Damon Bagwell JUNE 2023                 -->
+
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utm-8">
+    <title>Survey Form</title>
+  </head>
+    
+  <body>
+  <div class="Title">
+  <h1 id='title'>Survey Form</h1>
+  <p id='description'><em>Thank you for taking the time to help us improve our services!</em></p>
+  <div>
+
+    <form id="survey-form" method="post" action="https://survey-forms.org/survey1">
+      
+      <div class="textbox">
+      <fieldset>  <!-- TEXT BOXES -->
+        
+        <label 
+          for="name" 
+          id="name-label" 
+          class="boxlabel">
+          Name<br>
+          <input 
+            required
+            class="smalltxtbox"
+            id="name" 
+            name="name" 
+            type="text" 
+            placeholder="Enter your name" 
+          />
+        </label>
+        
+        <label 
+          for="email" 
+          id="email-label"
+          class="boxlabel">
+          Email<br>
+          <input 
+            required
+            class="smalltxtbox"
+            id="email" 
+            name="email" 
+            type="email" 
+            placeholder="Enter your email" 
+          />
+        </label>
+        
+        <label 
+          for="number" 
+          id="number-label"
+          class="boxlabel">
+          Age (optional)<br>
+          <input
+            class="smalltxtbox" 
+            id="number" 
+            name="age" 
+            type="number" 
+            min="13" 
+            max="120" 
+            placeholder="Age" 
+          />
+        </label>
+      
+      </fieldset>
+      </div>
+      
+      <div class="Radiobuttons">
+      <fieldset>  <!-- RADIO BUTTONS -->
+        <p>Would you recommend our site to a friend?</p>
+        <label for="def-rec">
+          <input 
+            id="def-rec" 
+            type="radio" 
+            name="rec-type"
+            value="0" 
+            class="inline" 
+          />
+          Definitely
+        </label>
+        <br>
+
+        <label for="maybe-rec">
+          <input 
+            id="maybe-rec" 
+            type="radio" 
+            name="rec-type"
+            value="1" 
+            class="inline" 
+            />
+            Maybe
+          </label>
+          <br>
+
+        <label for="notsure-rec">
+          <input 
+          id="notsure-rec" 
+          type="radio" 
+          name="rec-type"
+          value="2" 
+          class="inline" 
+          />
+          Not Sure
+        </label>
+        
+      </fieldset>
+      </div>
+
+      <div class="dropdown">
+      <fieldset>  <!-- DROPDOWN SELECTION -->
+        
+        <p>What is your favorite feature of our site?</p>
+        
+        <select 
+          id="dropdown" 
+          type="dropdown" 
+          name="feature" 
+          class="ddbox">
+          <option value="0">Select an option</option>
+          <option value="1">Games</option>
+          <option value="2">Forums</option>
+          <option value="3">Live Chat</option>
+          <option value="4">Everything!</option>
+        </select>
+
+      </fieldset>
+      </div>
+
+      <div class="checkbox">
+      <fieldset>  <!-- CHECKBOX SELECTION -->
+        <p>What would you like to see improved? (Check all that apply)</p>
+        
+        <label for="interface">
+          <input 
+            id="interface" 
+            type="checkbox" 
+            value="interface" 
+            class="inline"/>
+            User Interface
+        </label>
+        <br>
+
+        <label for="moregames">
+          <input 
+            id="moregames" 
+            type="checkbox" 
+            value="moregames" 
+            class="inline" />
+            More Games!
+        </label>
+        <br>
+
+        <label for="newsletter">
+          <input 
+            id="newsletter" 
+            type="checkbox" 
+            value="newsletter" 
+            class="inline" />
+            Offer a Newsletter
+        </label>
+        <br>
+
+        <label for="videos">
+          <input 
+            id="videos" 
+            type="checkbox" 
+            value="videos" 
+            class="inline" />
+            More Videos
+        </label>
+        <br>
+      </fieldset>
+
+      <div class="commentbox">
+      <fieldset>   <!-- COMMENTBOX SECTION -->
+        <label for="comments" class="commentlabel">
+          Any comments or suggestions?
+          <br>
+         <textarea 
+            id="comments" 
+            name="comments" 
+            rows="5" 
+            cols="50" 
+            placeholder="Enter your comments here...">
+         </textarea>
+        </label>
+      </fieldset>
+      </div>
+
+      <div class="submitbutton">
+      <fieldset>   <!-- SUBMITBUTTON SECTION -->
+          <input
+            id="submit" 
+            type="submit"
+            value="SUBMIT SURVEY"
+          />
+
+        </fieldset>
+      </div>
+
+    </form>
+
+  </body>
+
+</html>
