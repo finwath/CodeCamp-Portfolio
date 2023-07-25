@@ -1,0 +1,136 @@
+<!-- freeCodecamp Cert Project #4: Product Landing Page -->
+<!-- Responsive Web Design Certification Project        -->
+<!-- By: Damon Bagwell JULY 2023                        -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utm-8">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <script src="https://kit.fontawesome.com/76424c63c2.js" crossorigin="anonymous"></script>
+  <title>Product Landing Page</title>
+<head>
+
+<body>
+
+  <header id="header">
+
+    <div class="company-logo">
+      <img class="logo-img" id="header-img" src="https://images.vexels.com/media/users/3/215943/raw/04f94bb41d16888753aa64e18bed3e02-drone-company-logo-template.jpg" width="150"></img>
+    </div>
+
+    <nav id="nav-bar">
+      <ul class="navbar-list">
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#promo-vid">Demo Video</a></li>
+        <li><a class="nav-link" href="#pricing">Services</a></li>
+        <li><a class="nav-link" href="#contact-us">Contact Us!</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+
+  <section class="hero" id="about">
+    
+    <h1 class="hero-title">Advanced Visuals Drone Services</h1>
+    
+    <div class="section-wrapper">
+    <div class="hero-section">
+      <div class="icon"><i class="fa-solid fa-image"></i></div>
+      <h4>Aerial Photography</h4>
+      <p>Drones are equiped with cameras that capture images in full color 4K so every image is vivid and sharp</p>
+    </div>
+    
+    <div class="hero-section">
+      <div class="icon"><i class="fa-solid fa-video"></i></div>
+     <h4>Aerial Videos</h4>
+      <p>Our drones record video in full color 4K at 60 frames a second so content is recorded crisp and clear</p>
+    </div>
+    
+    <div class="hero-section">
+      <div class="icon"><i class="fa-solid fa-route"></i></div>
+      <h4>Mapping</h4>
+      <p>We can use our drones to create full maps of large areas, including orthographic maps which allow for many types of measurement overlays</p>
+    </div>
+    
+    <div class="hero-section">
+      <div class="icon"><i class="fa-solid fa-mountain-city"></i></div>
+      <h4>Reality Modeling</h4>
+      <p>Using state-of-the-art AI control of the drone and rendering software, we can create full digital 3D models of just about any structure</p>
+    </div>
+    </div>
+
+  </section>
+
+  <section class="promo-vid" id="promo-vid">
+    <h2>Advanced Visuals is an official partner with <a href="https://skydio.com">Skydio</a>:</h2>
+    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/xQGupL95m9Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <div class="service" id="photos">
+      <h3>Aerial Photos</h3>
+      <ul>
+        <li>Selling Point #1</li>
+        <li>Selling Point #2</li>
+        <li>Selling Point #3</li>
+        <li>Selling Point #4</li>
+       </ul>
+       <h4 class="serv-price">$150 per day</h4>
+    </div>
+
+    <div class="service" id="video">
+      <h3>Aerial Videography</h3>
+      <ul>
+        <li>Selling Point #1</li>
+        <li>Selling Point #2</li>
+        <li>Selling Point #3</li>
+        <li>Selling Point #4</li>
+      </ul>
+      <h4 class="serv-price">$300 per day</h4>
+    </div>
+
+    <div class="service" id="mapping">
+      <h3>Area Mapping</h3>
+      <ul>
+        <li>Selling Point #1</li>
+        <li>Selling Point #2</li>
+        <li>Selling Point #3</li>
+        <li>Selling Point #4</li>
+      </ul>
+      <h4 class="serv-price">$300 per day</h4>
+    </div>
+
+    <div class="service" id="capture">
+      <h3>Reality Capture</br>&</br>3D Modeling</h3>
+      <ul>
+        <li>Selling Point #1</li>
+        <li>Selling Point #2</li>
+        <li>Selling Point #3</li>
+        <li>Selling Point #4</li>
+      </ul>
+      <h4 class="serv-price">$500 per scan</h4>
+    </div>
+  </section>
+
+  <section class="contact-us" id="contact-us">
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <h2>If you have interest in our services,</br>Please provide your email address</br>and someone will contact you ASAP:</h2>
+      <div class="email-input">
+      <input type="email" class="email" id="email" name="email" placeholder="Email Address" required></input>
+      <input type="submit" class="button" id="submit" value="SUBMIT"></input>
+      </div>
+    </form>
+  </section>
+
+  <footer>
+    <p>Product Landing Page Project for <a href="https://freecodecamp.org" target="blank" rel="noreferrer">freeCodeCamp</a> by Damon Bagwell, 2023</p>
+  </footer>
+
+</body>
+
+</html>
