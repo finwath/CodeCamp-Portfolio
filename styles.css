@@ -1,0 +1,213 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background: black;
+  }
+  
+  #navbar > ul {
+    font-size: 1.5rem;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background: black;
+  }
+  
+  #navbar > ul > li {
+    font-family: arial;
+    font-style: italic;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  
+  #navbar > ul > li > a {
+    text-decoration: none;
+    color: green;
+    text-transform: uppercase;
+  }
+  
+  #welcome-section {
+    background: linear-gradient(
+     180deg,
+      black 5%,
+      rgb(0 60 0) 100%
+      );
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  #welcome-section h1 {
+    font-family: ocr a;
+    color: white;
+    padding-top: 50vh;
+    font-size: 3rem;
+  }
+  
+  #welcome-section h3 {
+    font-family: ocr a;
+    color: white;
+    font-size: 2.23rem;
+  }
+  
+  #cursor {
+    content: "";
+    width: 1.3rem;
+    height: 2.2rem;
+    background: white;
+    display: inline-block;
+  }
+  
+  #cursor-wrapper {
+    display: inline-flex;
+    flex-direction: row;
+    height: 50px;
+    gap: 5px;
+  }
+  
+  @keyframes cursor-blink {
+    0% {
+      opacity: 0%;
+    }
+  }
+  
+  #cursor {
+    animation: cursor-blink 1.3s steps(2) infinite;
+  }
+  
+  #projects {
+    background: rgb(0 60 0);
+    padding-bottom: 50vh;
+  }
+  
+  #projects a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  #projects h3 {
+    padding-top: 5rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    font-family: courier;
+    font-size: 3rem;
+  }
+  
+  #projects h2 {
+    padding-bottom: 3rem;
+    text-align: center;
+    font-family: courier;
+    font-size: 1.5rem;
+  }
+  
+  .tile-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-content: center; 
+  }
+  
+  .project-tile {
+    display: inline-block;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .project-tile img {
+    border: 10px solid black;
+    border-radius: 10%;
+  }
+  
+  .project-tile > p {
+    border: 5px solid black;
+    border-radius: 3%;
+    margin-top: 5px;
+    padding: 1rem;
+    background: linear-gradient(
+      90deg, 
+      black 3%, 
+      grey 6%
+      );
+    font-family: courier;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-justify: center;
+  }
+  
+  #contact-me {
+    background: rgb(0 60 0);
+  }
+  
+  #contact-me h3 {
+    font-family: courier;
+    font-size: 2rem;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 1rem;
+    text-justify: center;
+    text-align: center;
+  }
+  
+  #contact-me ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 2rem;
+  }
+  
+  #contact-me .platform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 1rem;
+  }
+  
+  .platform a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .platform p {
+    padding: 1rem;
+    display: inline-box;
+    justify-content: center;
+    align-content: center;
+    font-size: 2rem;
+  }
+  
+  .platform p:last-of-type {
+    padding-bottom: 5rem;
+  }
+  
+  footer {
+    border-top: 2px solid black;
+    background: rgb(0 60 0);
+    text-justify: center;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: inherit;
+  }
